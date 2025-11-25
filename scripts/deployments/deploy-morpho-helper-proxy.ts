@@ -37,7 +37,7 @@ async function main() {
   console.log("Deployer balance:", ethers.formatEther(balance), "ETH");
 
   // Get implementation address from environment variable
-  const implementationAddress = "0x13edC544A0e910ff4AA40Ba2F9dcf50B65A66a53";
+  const implementationAddress = "0x3088470fd0119be130E74A0547AcF47b35dB475C";
   if (!implementationAddress) {
     throw new Error("IMPLEMENTATION_ADDRESS not set in .env file");
   }

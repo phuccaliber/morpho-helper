@@ -27,7 +27,7 @@ async function main() {
   console.log("===========================================");
 
   // Get proxy address from environment variable
-  const proxyAddress = "0xD682B123BA512927bFDC4A744bFc5CF47b257191";
+  const proxyAddress = "0x6cF0a53489cCD3761ded80084E0Ba5CcDc853Db9";
   console.log("Proxy Address:", proxyAddress);
 
   // Validate proxy address

@@ -76,9 +76,13 @@ contract MorphoHelper is Initializable, UUPSUpgradeable, AccessControlUpgradeabl
 
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
-        // Development environment
-        morpho = IMorpho(0xEB4162C6E363e7C925395E82a8fe7BE78bc74A5f);
-        public_allocator = IPublicAllocator(0x646f25D09C030b5B61e4dc0a06CAe98Ecf3CbB9A);
+        if (block.chainid == 1) { // Ethereum Mainnet
+            morpho = IMorpho(0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb);
+            public_allocator = IPublicAllocator(0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D);
+        } else if (block.chainid == 8453) { // Base Mainnet
+            morpho = IMorpho(0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb);
+            public_allocator = IPublicAllocator(0xA090dD1a701408Df1d4d0B85b716c87565f90467);
+        }
         _disableInitializers();
     }
 
