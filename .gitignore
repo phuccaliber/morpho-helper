@@ -12,3 +12,8 @@ docs/
 
 # Dotenv file
 .env
+artifacts
+broadcast
+cache_hardhat
+typechain-types
+node_modules
