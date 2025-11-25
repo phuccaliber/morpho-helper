@@ -1,4 +1,9 @@
 {
-    "morphoHelper": "0x3088470fd0119be130E74A0547AcF47b35dB475C",
-    "proxy": "0x6cF0a53489cCD3761ded80084E0Ba5CcDc853Db9"
+    "development": {
+        "morphoHelper": "0x3088470fd0119be130E74A0547AcF47b35dB475C",
+        "proxy": "0x6cF0a53489cCD3761ded80084E0Ba5CcDc853Db9",
+        "vault": "0x5b043AD303a5F93Db686a0e0d065f99307926a3F",
+        "idleMarket": "0x3a43f9ae293a579b34a3d327a659ca316c49103f55ddfc9705ddcef0e75cc5c2",
+        "obtcMarket": "0x8e7f161b69f7b8d79baf0e312a337b2f21f1bda361c40769d9aee08384fed216"
+    }
 }
